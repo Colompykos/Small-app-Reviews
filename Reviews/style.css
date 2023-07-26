@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.first-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  width: 80px;
+  height: 4px;
+  background-color: #53aade;
+  transition: width 0.25s ease-out;
+}
+.title:hover::before {
+  width: 100%;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: 3px;
+  width: 80px;
+  height: 4px;
+  background-color: #53aade;
+  transition: width 0.5s ease-out;
+}
+
+.title:hover::after {
+  width: 100%;
+}
+
+.second-part {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  border-radius: 9px;
+  background-color: white;
+  width: 55%;
+  min-height: 80px;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 5px -1px 0px 2px #ff4b14;
+}
+
+.person-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-container::before {
+  position: absolute;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  border-radius: 50%;
+  color: white;
+  content: '"';
+  width: 30px;
+  height: 30px;
+  background-color: #ff6a3c;
+  top: 20px;
+  left: 4px;
+  text-align: center;
+}
+
+.name {
+  font-family: "Orev Light Regular";
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 19px;
+  margin-bottom: 15px;
+}
+
+.position {
+  font-family: "Bricolage Grotesque 10pt Condensed", sans-serif;
+  color: #53aade;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 3px;
+  margin-bottom: auto;
+}
+
+.description {
+  width: 60%;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+
+.btns-manip {
+  display: flex;
+  gap: 30px;
+}
+
+.btns {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.random-btn {
+  margin-top: 9px;
+  background-color: transparent;
+  border: 1px solid #ff4b14;
+  border-radius: 8px;
+  height: 25px;
+  width: 150px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+.btns:hover {
+  background-color: rgb(206, 206, 206);
+  border-radius: 8px;
+}
+
+.random-btn:hover {
+  background-color: #ff4b14;
+}
